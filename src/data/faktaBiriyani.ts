@@ -16,6 +16,7 @@ export const faktaBiriyaniData: Restaurant = {
     headerBg: '#1C1917',
     headerText: '#FFFBEB',
   },
+  allowDineIn: true,
   categories: [
     { id: 'chicken', name: 'Chicken' },
     { id: 'mutton', name: 'Mutton' },
@@ -34,7 +35,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 179,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-dum-biryani.jpg',
       description: 'Slow-cooked authentic chicken dum biryani with saffron basmati rice',
       variants: [
         { id: 'fb-ch1-h', name: 'Half', price: 179 },
@@ -50,7 +51,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 199,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-dum-boneless-biryani.jpg',
       description: 'Fragrant dum biryani with tender boneless juicy chicken pieces',
       variants: [
         { id: 'fb-ch2-h', name: 'Half', price: 199 },
@@ -66,7 +67,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 219,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-tikka-biryani.jpg',
       description: 'Chargrilled smoky chicken tikka layered with aromatic saffron rice',
       variants: [
         { id: 'fb-ch3-h', name: 'Half', price: 219 },
@@ -82,7 +83,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 249,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-seekh-biryani.jpg',
       description: 'Juicy spiced chicken seekh kebab slices layered in rich dum rice',
       variants: [
         { id: 'fb-ch4-h', name: 'Half', price: 249 },
@@ -98,7 +99,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 169,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-pulao.jpg',
       description: 'Mildly spiced aromatic basmati pulao cooked in rich chicken broth',
       variants: [
         { id: 'fb-ch5-h', name: 'Half', price: 169 },
@@ -116,7 +117,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 249,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1642821373181-696a54913e93?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/mutton-dum-biryani.jpg',
       description: 'Slow-braised royal mutton dum biryani with tender bone-in goat meat',
       variants: [
         { id: 'fb-mt1-h', name: 'Half', price: 249 },
@@ -132,7 +133,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 239,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/mutton-pulao.jpg',
       description: 'Fragrant traditional yakhni pulao with succulent spiced mutton pieces',
       variants: [
         { id: 'fb-mt2-h', name: 'Half', price: 239 },
@@ -150,7 +151,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 149,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/egg-biryani.jpg',
       description: 'Aromatic basmati biryani topped with roasted golden boiled eggs',
       variants: [
         { id: 'fb-eg1-h', name: 'Half', price: 149 },
@@ -168,7 +169,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 179,
       isVeg: true,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/veg-biryani.jpg',
       description: 'Rich layered vegetable dum biryani with carrots, green beans and mint',
       variants: [
         { id: 'fb-vg1-h', name: 'Half', price: 179 },
@@ -184,7 +185,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 219,
       isVeg: true,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/paneer-tikka-biryani.jpg',
       description: 'Royal biryani layered with marinated grilled paneer tikka cubes',
       variants: [
         { id: 'fb-vg2-h', name: 'Half', price: 219 },
@@ -200,7 +201,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 449,
       isVeg: true,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/veg-pulao.jpg',
       description: 'Fragrant basmati rice tossed with fresh garden vegetables and spices',
       // NOTE: Veg Pulao prices kept exactly as supplied by owner
       variants: [
@@ -219,7 +220,7 @@ export const faktaBiriyaniData: Restaurant = {
       price: 249,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/prawns-biryani.jpg',
       description: 'Coastal spiced biryani packed with fresh marinated juicy prawns',
       variants: [
         { id: 'fb-fs1-h', name: 'Half', price: 249 },
@@ -236,7 +237,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Chicken Cutlet 2pcs',
       price: 129,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/chicken-cutlet.jpg',
       description: 'Crispy crumbed spiced minced chicken cutlet patties (2 pcs)',
     },
     {
@@ -245,7 +246,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Veg Cutlet 2pcs',
       price: 99,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/veg-cutlet.jpg',
       description: 'Golden fried spiced mixed vegetable cutlets (2 pcs)',
     },
     {
@@ -254,7 +255,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Gulabjamun 2pcs',
       price: 49,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1666190064667-3149e0cc68a0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/gulabjamun.jpg',
       description: 'Soft melt-in-mouth milk dumplings soaked in cardamom sugar syrup (2 pcs)',
     },
     {
@@ -263,7 +264,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Raita',
       price: 39,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/raita.jpg',
       description: 'Cool beaten curd seasoned with boondi, roasted cumin, and cilantro',
     },
 
@@ -274,7 +275,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Mirinda — 250 ml',
       price: 129,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/mirinda-250ml.jpg',
       description: 'Chilled tangy orange flavored sparkling beverage (250 ml)',
     },
     {
@@ -283,7 +284,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Pepsi — 250 ml',
       price: 29,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/pepsi-250ml.jpg',
       description: 'Classic crisp and refreshing chilled cola beverage (250 ml)',
     },
     {
@@ -292,7 +293,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Coke — 250 ml',
       price: 29,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/coke-250ml.jpg',
       description: 'Ice-cold classic Coca-Cola (250 ml)',
     },
     {
@@ -301,7 +302,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Masala Chaas — 300 ml',
       price: 39,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1587049016823-69ef9d68f664?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/masala-chaas-300ml.jpg',
       description: 'Traditional spiced buttermilk blended with ginger, mint and roasted jeera (300 ml)',
     },
     {
@@ -310,7 +311,7 @@ export const faktaBiriyaniData: Restaurant = {
       name: 'Cold Coffee — 300 ml',
       price: 79,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&auto=format&fit=crop&q=80',
+      image: '/images/fakta-biriyani/cold-coffee-300ml.jpg',
       description: 'Thick creamy blended cold coffee served chilled (300 ml)',
     },
   ],

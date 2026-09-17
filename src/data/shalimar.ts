@@ -4,9 +4,9 @@ import { ORDER_WHATSAPP_NUMBER } from '@/config/restaurants';
 export const shalimarData: Restaurant = {
   id: 'shalimar',
   slug: 'shalimar',
-  name: 'Shalimar Kitchen',
-  tagline: 'Fine Indian Cuisine & Authentic Flavours',
-  description: 'Authentic Maharashtrian, Konkani & North Indian Cuisine in Chiplun',
+  name: 'Shalimar Cloud Restaurant',
+  tagline: 'Authentic Maharashtrian, Konkani & North Indian Cuisine',
+  description: 'Authentic Maharashtrian, Konkani & North Indian Cloud Kitchen in Chiplun',
   emoji: '🍲',
   whatsappNumber: ORDER_WHATSAPP_NUMBER,
   theme: {
@@ -17,6 +17,7 @@ export const shalimarData: Restaurant = {
     headerText: '#F0FDF4',
   },
   isComingSoon: false,
+  allowDineIn: false,
   categories: [
     { id: 'snacks', name: 'Snacks' },
     { id: 'starters', name: 'Starters' },
@@ -35,7 +36,7 @@ export const shalimarData: Restaurant = {
       name: 'Batata Vada',
       price: 20,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/batata-vada.jpg',
       description: 'Crisp golden batter-fried spicy potato dumpling with mustard and curry leaves',
     },
     {
@@ -44,7 +45,7 @@ export const shalimarData: Restaurant = {
       name: 'Vada Pav',
       price: 20,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/vada-pav.jpg',
       description: 'Iconic Mumbai burger with spicy batata vada, red garlic chutney and green chili',
     },
     {
@@ -53,7 +54,7 @@ export const shalimarData: Restaurant = {
       name: 'Rassa Batata Vada Pav',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/rassa-batata-vada-pav.jpg',
       description: 'Fresh vada pav dipped in a fiery, aromatic Maharashtrian Kat/Rassa gravy',
     },
     {
@@ -62,7 +63,7 @@ export const shalimarData: Restaurant = {
       name: 'Misal Pav',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/misal-pav.jpg',
       description: 'Sprouted moth bean curry topped with spicy farsan, chopped onions, lemon and pav',
     },
     {
@@ -71,7 +72,7 @@ export const shalimarData: Restaurant = {
       name: 'Puri Bhaji',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/puri-bhaji.jpg',
       description: 'Fluffy golden puffed puris served with mildly spiced homestyle potato bhaji',
     },
     {
@@ -80,7 +81,7 @@ export const shalimarData: Restaurant = {
       name: 'Sabudana Vada',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/sabudana-vada.jpg',
       description: 'Crispy fried tapioca pearl and peanut patties served with sweet curd chutney',
     },
     {
@@ -89,7 +90,7 @@ export const shalimarData: Restaurant = {
       name: 'Sabodana Khichdi',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/sabodana-khichdi.jpg',
       description: 'Tender sago pearls tossed with roasted peanuts, cumin, potatoes and green chilies',
     },
     {
@@ -98,7 +99,7 @@ export const shalimarData: Restaurant = {
       name: 'Idli',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/idli.jpg',
       description: 'Soft and fluffy steamed fermented rice cakes served with hot sambar and coconut chutney',
     },
     {
@@ -107,7 +108,7 @@ export const shalimarData: Restaurant = {
       name: 'Medu Vada',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/medu-vada.jpg',
       description: 'Crispy doughnut-shaped black gram lentil fritters paired with sambar and chutney',
     },
     {
@@ -116,7 +117,7 @@ export const shalimarData: Restaurant = {
       name: 'Butter Pav Bhaji',
       price: 110,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/butter-pav-bhaji.jpg',
       description: 'Spiced mashed vegetable curry topped with a generous melting slab of pure Amul butter',
     },
     {
@@ -125,7 +126,7 @@ export const shalimarData: Restaurant = {
       name: 'Cheese Pav Bhaji',
       price: 120,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/cheese-pav-bhaji.jpg',
       description: 'Rich pav bhaji smothered with a lavish blanket of grated melted cheese',
     },
     {
@@ -134,7 +135,7 @@ export const shalimarData: Restaurant = {
       name: 'Sada Dosa',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/sada-dosa.jpg',
       description: 'Crispy golden thin crepe made from fermented rice-lentil batter',
     },
     {
@@ -143,7 +144,7 @@ export const shalimarData: Restaurant = {
       name: 'Masala Dosa',
       price: 100,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/masala-dosa.jpg',
       description: 'Golden crispy dosa stuffed with savory spiced onion-potato masala filling',
     },
     {
@@ -152,7 +153,7 @@ export const shalimarData: Restaurant = {
       name: 'Uttapam',
       price: 100,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/uttapam.jpg',
       description: 'Thick, soft and spongy savory South Indian rice pancake',
     },
     {
@@ -161,7 +162,7 @@ export const shalimarData: Restaurant = {
       name: 'Onion Uttapam',
       price: 120,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/onion-uttapam.jpg',
       description: 'Thick uttapam topped with crunchy caramelized onions, green chilies and fresh coriander',
     },
     {
@@ -170,7 +171,7 @@ export const shalimarData: Restaurant = {
       name: 'Pure Ghee Sheera',
       price: 85,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-cutlet.jpg',
       description: 'Decadent sweet semolina halwa prepared in aromatic pure desi ghee with nuts',
     },
     {
@@ -179,7 +180,7 @@ export const shalimarData: Restaurant = {
       name: 'Poha',
       price: 60,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/poha.jpg',
       description: 'Traditional flattened rice tempered with mustard, turmeric, crunchy peanuts and coriander',
     },
     {
@@ -188,7 +189,7 @@ export const shalimarData: Restaurant = {
       name: 'Upma',
       price: 60,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/upma.jpg',
       description: 'Savory roasted semolina cooked with curry leaves, mustard seeds, and ginger',
     },
     {
@@ -197,7 +198,7 @@ export const shalimarData: Restaurant = {
       name: 'Bread Butter',
       price: 30,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bread-butter.jpg',
       description: 'Soft fresh bakery bread slices with generous creamy salted butter spread',
     },
     {
@@ -206,7 +207,7 @@ export const shalimarData: Restaurant = {
       name: 'Spl. Tea',
       price: 30,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/spl-tea.jpg',
       description: 'Aromatic piping hot Indian chai brewed with ginger, crushed cardamom and fresh milk',
     },
     {
@@ -215,7 +216,7 @@ export const shalimarData: Restaurant = {
       name: 'Hot Coffee (Regular)',
       price: 30,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/hot-coffee-regular.jpg',
       description: 'Freshly prepared frothy and aromatic hot filter coffee',
     },
 
@@ -226,7 +227,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer 65',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-65.jpg',
       description: 'Crispy fried cottage cheese cubes tossed in spicy yogurt, curry leaves and chili sauce',
     },
     {
@@ -235,7 +236,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Tikka Kabab',
       price: 240,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-tikka-kabab.jpg',
       description: 'Skewered cottage cheese cubes marinated in tandoori spices and charred in clay oven',
     },
     {
@@ -244,7 +245,7 @@ export const shalimarData: Restaurant = {
       name: 'Veg Hara Bhara Kabab',
       price: 250,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/veg-hara-bhara-kabab.jpg',
       description: 'Nutritious shallow-fried patties made with spinach, green peas, potatoes and cashew',
     },
     {
@@ -253,7 +254,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Pahadi Tikka',
       price: 250,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-pahadi-tikka.jpg',
       description: 'Paneer marinated in a fragrant green paste of fresh mint, cilantro, and mountain spices',
     },
     {
@@ -263,7 +264,7 @@ export const shalimarData: Restaurant = {
       price: 280,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-tandoori.jpg',
       description: 'Classic clay-oven roasted bone-in chicken marinated in spiced yogurt and Kashmiri chili',
       variants: [
         { id: 'sh-ch-tnd-h', name: 'Half', price: 280 },
@@ -277,7 +278,7 @@ export const shalimarData: Restaurant = {
       price: 440,
       isVeg: false,
       hasVariants: true,
-      image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-tandoori-lollipop.jpg',
       description: 'Juicy chicken drumettes marinated in tandoori spices and roasted crisp',
       variants: [
         { id: 'sh-ch-tlp-h', name: 'Half', price: 440 },
@@ -290,7 +291,7 @@ export const shalimarData: Restaurant = {
       name: 'Prawns Kolwada',
       price: 240,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/prawns-kolwada.jpg',
       description: 'Fresh prawns coated in a spicy red ajwain batter and deep fried to crunchy perfection',
     },
     {
@@ -299,7 +300,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken 65',
       price: 180,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-65.jpg',
       description: 'Spicy bite-sized chicken pieces tossed with curry leaves, cracked mustard, and red chilies',
     },
     {
@@ -308,7 +309,7 @@ export const shalimarData: Restaurant = {
       name: 'Prawns Tandoori',
       price: 320,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/prawns-tandoori.jpg',
       description: 'Succulent fresh prawns marinated in tandoori masala and chargrilled over hot embers',
     },
     {
@@ -317,7 +318,7 @@ export const shalimarData: Restaurant = {
       name: 'Surmai Tandoori',
       price: 350,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/surmai-tandoori.jpg',
       description: 'Thick fresh Kingfish (Surmai) steak coated in fiery tandoori spices and roasted',
     },
     {
@@ -326,7 +327,7 @@ export const shalimarData: Restaurant = {
       name: 'Pomfret Tandoori',
       price: 450,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/pomfret-tandoori.jpg',
       description: 'Whole silver Pomfret fish generously marinated in coastal tandoori spices and charred',
     },
 
@@ -337,7 +338,7 @@ export const shalimarData: Restaurant = {
       name: 'Mix Veg',
       price: 160,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mix-veg.jpg',
       description: 'Assorted seasonal vegetables simmered in a spiced onion-tomato homestyle gravy',
     },
     {
@@ -346,7 +347,7 @@ export const shalimarData: Restaurant = {
       name: 'Veg Kolhapuri',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/veg-kolhapuri.jpg',
       description: 'Fiery mixed vegetable curry cooked with roasted coconut and authentic Kolhapuri red chilies',
     },
     {
@@ -355,7 +356,7 @@ export const shalimarData: Restaurant = {
       name: 'Bhendi Fry',
       price: 150,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bhendi-fry.jpg',
       description: 'Crispy shallow-fried okra slices seasoned with cumin, turmeric, and dry mango powder',
     },
     {
@@ -364,7 +365,7 @@ export const shalimarData: Restaurant = {
       name: 'Bhendi Masala',
       price: 160,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bhendi-masala.jpg',
       description: 'Tender okra sautéed with caramelized onions and rich tangy tomato masala',
     },
     {
@@ -373,7 +374,7 @@ export const shalimarData: Restaurant = {
       name: 'Veg Maratha',
       price: 220,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/veg-maratha.jpg',
       description: 'Crispy fried vegetable cutlet dumplings served in a rich and spicy Maharashtrian curry',
     },
     {
@@ -382,7 +383,7 @@ export const shalimarData: Restaurant = {
       name: 'Aloo Jeera',
       price: 130,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/aloo-jeera.jpg',
       description: 'Diced potatoes tempered with roasted whole cumin seeds, green chilies, and fresh herbs',
     },
     {
@@ -391,7 +392,7 @@ export const shalimarData: Restaurant = {
       name: 'Kaju Masala',
       price: 240,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/kaju-masala.jpg',
       description: 'Whole roasted crunchy cashew nuts simmered in a luscious creamy tomato onion sauce',
     },
     {
@@ -400,7 +401,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Bhurji',
       price: 220,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-bhurji.jpg',
       description: 'Crumbled fresh cottage cheese cooked with chopped onions, tomatoes, and green chilies',
     },
     {
@@ -409,7 +410,7 @@ export const shalimarData: Restaurant = {
       name: 'Mushroom Masala',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mushroom-masala.jpg',
       description: 'Fresh button mushrooms simmered in a hearty and fragrant spiced North Indian sauce',
     },
     {
@@ -418,7 +419,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Butter Masala',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-butter-masala.jpg',
       description: 'Soft paneer cubes simmered in a velvety, buttery mildly sweet tomato-cream makhani gravy',
     },
     {
@@ -427,7 +428,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Tikka Masala',
       price: 220,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-tikka-masala.jpg',
       description: 'Smoky grilled paneer tikka chunks infused into a robust and creamy spiced gravy',
     },
     {
@@ -436,7 +437,7 @@ export const shalimarData: Restaurant = {
       name: 'Palak Paneer',
       price: 190,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/palak-paneer.jpg',
       description: 'Fresh cottage cheese cubes cooked in a smooth, seasoned garlic spinach puree',
     },
     {
@@ -445,7 +446,7 @@ export const shalimarData: Restaurant = {
       name: 'Dal Fry',
       price: 150,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/dal-fry.jpg',
       description: 'Slow-cooked yellow lentils tempered with ghee, onions, tomatoes, garlic and cumin',
     },
     {
@@ -454,7 +455,7 @@ export const shalimarData: Restaurant = {
       name: 'Dal Tadka',
       price: 170,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/dal-tadka.jpg',
       description: 'Yellow lentils finished with a smoking desi ghee tadka of whole red chilies and garlic',
     },
     {
@@ -463,7 +464,7 @@ export const shalimarData: Restaurant = {
       name: 'Paneer Tawa Masala',
       price: 250,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/paneer-tawa-masala.jpg',
       description: 'Cottage cheese cubes and crunchy bell peppers tossed with coarse spices on a hot iron tawa',
     },
 
@@ -474,7 +475,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Sukha',
       price: 200,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-sukha.jpg',
       description: 'Coastal Maharashtrian dry chicken preparation coated with roasted coconut and garam masala',
     },
     {
@@ -483,7 +484,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Kolhapuri',
       price: 220,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-kolhapuri.jpg',
       description: 'Famous spicy red chicken curry made with bold Kolhapuri spices and dry coconut',
     },
     {
@@ -492,7 +493,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Masala',
       price: 180,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-masala.jpg',
       description: 'Tender chicken pieces cooked in a classic homestyle onion and tomato gravy',
     },
     {
@@ -501,7 +502,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Tikka Masala',
       price: 200,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-tikka-masala.jpg',
       description: 'Smoky grilled chicken tikka cubes simmered in a creamy, velvety tomato sauce',
     },
     {
@@ -510,7 +511,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Keema',
       price: 180,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-keema.jpg',
       description: 'Fine minced chicken cooked with green peas, onions, and warming whole spices',
     },
     {
@@ -519,7 +520,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Malvani',
       price: 320,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-malvani.jpg',
       description: 'Authentic Konkan style chicken curry cooked with freshly grated coconut and Malvani masala',
     },
     {
@@ -528,7 +529,7 @@ export const shalimarData: Restaurant = {
       name: 'Butter Chicken (Half)',
       price: 280,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/butter-chicken.jpg',
       description: 'Tender tandoori chicken cooked in a rich, buttery, and mildly sweet tomato makhani gravy (Half)',
     },
     {
@@ -537,7 +538,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Handi (Half)',
       price: 380,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-handi.jpg',
       description: 'Slow-cooked chicken in an earthen clay handi pot with aromatic whole-spiced gravy (Half)',
     },
     {
@@ -546,7 +547,7 @@ export const shalimarData: Restaurant = {
       name: 'Spl. Chicken Kharda',
       price: 280,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/spl-chicken-kharda.jpg',
       description: 'Rustic Maharashtrian dry chicken dish tossed in fiery crushed green chili and garlic thecha',
     },
     {
@@ -555,7 +556,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Sukha',
       price: 320,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-sukha.jpg',
       description: 'Tender slow-cooked goat meat roasted dry with desiccated coconut and spicy masala',
     },
     {
@@ -564,7 +565,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Masala',
       price: 340,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-masala.jpg',
       description: 'Succulent mutton pieces simmered in a rich, spicy, and deep onion-tomato sauce',
     },
     {
@@ -573,7 +574,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Malvani',
       price: 420,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-malvani.jpg',
       description: 'Authentic Konkan coastal mutton curry prepared with roasted coconut paste and Malvani masala',
     },
     {
@@ -582,7 +583,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Handi (Half)',
       price: 460,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-handi.jpg',
       description: 'Slow-braised mutton in an earthen handi pot with robust whole spices and thick gravy (Half)',
     },
     {
@@ -591,7 +592,7 @@ export const shalimarData: Restaurant = {
       name: 'Spl. Mutton Kharda',
       price: 380,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/spl-mutton-kharda.jpg',
       description: 'Mutton pieces pan-tossed in pungent crushed green chilies, garlic, and peanut thecha',
     },
     {
@@ -600,7 +601,7 @@ export const shalimarData: Restaurant = {
       name: 'Egg Masala',
       price: 180,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/egg-masala.jpg',
       description: 'Pan-roasted boiled eggs immersed in a thick, spiced onion-tomato and ginger-garlic gravy',
     },
     {
@@ -609,7 +610,7 @@ export const shalimarData: Restaurant = {
       name: 'Egg Curry',
       price: 180,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/egg-curry.jpg',
       description: 'Golden fried boiled eggs served in a fragrant coconut and onion based home-style curry',
     },
 
@@ -620,7 +621,7 @@ export const shalimarData: Restaurant = {
       name: 'Bangda Fry',
       price: 150,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bangda-fry.jpg',
       description: 'Fresh Mackerel fish marinated in coastal red chili paste, rava-coated and shallow fried crisp',
     },
     {
@@ -629,7 +630,7 @@ export const shalimarData: Restaurant = {
       name: 'Surmai Fry',
       price: 250,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/surmai-fry.jpg',
       description: 'Kingfish (Surmai) steak marinated in ginger-garlic and Konkani spices, pan-fried with rava crust',
     },
     {
@@ -638,7 +639,7 @@ export const shalimarData: Restaurant = {
       name: 'Pomfret Fry',
       price: 340,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/pomfret-fry.jpg',
       description: 'Whole silver Pomfret seasoned with lemon, red chili and kokum, crisply fried on a tawa',
     },
     {
@@ -647,7 +648,7 @@ export const shalimarData: Restaurant = {
       name: 'Mandeli Fry',
       price: 150,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mandeli-fry.jpg',
       description: 'Crispy deep-fried golden Anchovies (Mandeli) seasoned with coastal spices',
     },
     {
@@ -656,7 +657,7 @@ export const shalimarData: Restaurant = {
       name: 'Bombil Fry',
       price: 220,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bombil-fry.jpg',
       description: 'Fresh Bombay Duck fish flattened and coated in seasoned semolina, fried ultra-crisp',
     },
     {
@@ -665,7 +666,7 @@ export const shalimarData: Restaurant = {
       name: 'Prawns Sukha',
       price: 250,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/prawns-sukha.jpg',
       description: 'Fresh juicy prawns cooked dry with roasted coconut, curry leaves, and spicy Konkani masala',
     },
     {
@@ -674,7 +675,7 @@ export const shalimarData: Restaurant = {
       name: 'Prawns Masala',
       price: 270,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/prawns-masala.jpg',
       description: 'Prawns simmered in a luscious and tangy coastal coconut-tomato gravy with kokum',
     },
     {
@@ -683,7 +684,7 @@ export const shalimarData: Restaurant = {
       name: 'Fish Curry (Malvani)',
       price: 150,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/fish-curry-malvani.jpg',
       description: 'Authentic Konkan fish curry made with coconut milk, kokum, and freshly ground Malvani masala',
     },
 
@@ -694,7 +695,7 @@ export const shalimarData: Restaurant = {
       name: 'Plain Rice',
       price: 40,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/plain-rice.jpg',
       description: 'Steamed fluffy white long-grain rice',
     },
     {
@@ -703,7 +704,7 @@ export const shalimarData: Restaurant = {
       name: 'Steamed Rice',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/steamed-rice.jpg',
       description: 'Premium fragrant basmati rice steamed to perfection',
     },
     {
@@ -712,7 +713,7 @@ export const shalimarData: Restaurant = {
       name: 'Jeera Rice',
       price: 70,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/jeera-rice.jpg',
       description: 'Fragrant basmati rice tossed with roasted cumin seeds and desi ghee',
     },
     {
@@ -721,7 +722,7 @@ export const shalimarData: Restaurant = {
       name: 'Veg Pulao',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/veg-pulao.jpg',
       description: 'Aromatic basmati rice cooked with garden fresh vegetables and whole spices',
     },
     {
@@ -730,7 +731,7 @@ export const shalimarData: Restaurant = {
       name: 'Dal Khichdi',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/dal-khichdi.jpg',
       description: 'Comforting and wholesome blend of rice and yellow lentils tempered with mild spices',
     },
     {
@@ -739,7 +740,7 @@ export const shalimarData: Restaurant = {
       name: 'Dal Khichdi Tadka',
       price: 170,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/dal-khichdi-tadka.jpg',
       description: 'Classic dal khichdi elevated with a sizzling red chili, garlic, and ghee tadka',
     },
     {
@@ -748,7 +749,7 @@ export const shalimarData: Restaurant = {
       name: 'Tawa Pulao',
       price: 220,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/tawa-pulao.jpg',
       description: 'Street-style spicy rice tossed on a flat tawa with pav bhaji masala, veggies, and butter',
     },
 
@@ -759,7 +760,7 @@ export const shalimarData: Restaurant = {
       name: 'Veg Thali',
       price: 140,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/veg-thali.jpg',
       description: 'Traditional platter with 2 vegetable curries, dal, steamed rice, chapatis, salad, and pickle',
     },
     {
@@ -768,7 +769,7 @@ export const shalimarData: Restaurant = {
       name: 'Spl. Veg Thali',
       price: 180,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/spl-veg-thali.jpg',
       description: 'Deluxe vegetarian feast: Paneer dish, veg curry, dal tadka, jeera rice, chapatis, raita, papad, and sweet',
     },
     {
@@ -777,7 +778,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Thali',
       price: 200,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-thali.jpg',
       description: 'Konkani chicken curry, spicy rassa, chapatis/bhakri, steamed rice, and salad',
     },
     {
@@ -786,7 +787,7 @@ export const shalimarData: Restaurant = {
       name: 'Chicken Vade Thali',
       price: 250,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chicken-vade-thali.jpg',
       description: 'Flavorful Malvani chicken curry served with golden multigrain Kombdi Vade, rassa, and rice',
     },
     {
@@ -795,7 +796,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Thali',
       price: 300,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-thali.jpg',
       description: 'Rich mutton masala curry, spicy tambda rassa, chapatis/bhakri, rice, and onions',
     },
     {
@@ -804,7 +805,7 @@ export const shalimarData: Restaurant = {
       name: 'Mutton Vade Thali',
       price: 350,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/mutton-vade-thali.jpg',
       description: 'Succulent mutton curry served with traditional puffed Kombdi Vade, rassa, and rice',
     },
     {
@@ -813,7 +814,7 @@ export const shalimarData: Restaurant = {
       name: 'Bangda Thali',
       price: 200,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bangda-thali.jpg',
       description: 'Seafood platter featuring crispy Bangda fry, coastal fish rassa, steamed rice, and chapatis',
     },
     {
@@ -822,7 +823,7 @@ export const shalimarData: Restaurant = {
       name: 'Prawns Thali',
       price: 280,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/prawns-thali.jpg',
       description: 'Platter with tangy prawns masala, fried prawns, fish curry rassa, rice, and chapatis',
     },
     {
@@ -831,7 +832,7 @@ export const shalimarData: Restaurant = {
       name: 'Surmai Thali',
       price: 350,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/surmai-thali.jpg',
       description: 'Kingfish feast with golden Surmai rava fry, Malvani fish curry, steamed rice, and chapatis',
     },
     {
@@ -840,7 +841,7 @@ export const shalimarData: Restaurant = {
       name: 'Bombil Thali',
       price: 300,
       isVeg: false,
-      image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/bombil-thali.jpg',
       description: 'Crispy rava-fried Bombil, authentic coastal fish rassa, steamed rice, and chapatis',
     },
 
@@ -851,7 +852,7 @@ export const shalimarData: Restaurant = {
       name: 'Roti',
       price: 20,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/roti.jpg',
       description: 'Soft whole wheat flatbread roasted on tawa',
     },
     {
@@ -860,7 +861,7 @@ export const shalimarData: Restaurant = {
       name: 'Butter Roti',
       price: 30,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/butter-roti.jpg',
       description: 'Fresh tawa roti brushed with golden melted butter',
     },
     {
@@ -869,7 +870,7 @@ export const shalimarData: Restaurant = {
       name: 'Naan',
       price: 50,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/naan.jpg',
       description: 'Soft and chewy leavened flatbread baked in the clay tandoor',
     },
     {
@@ -878,7 +879,7 @@ export const shalimarData: Restaurant = {
       name: 'Butter Naan',
       price: 60,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/butter-naan.jpg',
       description: 'Tandoori naan glazed with rich creamy butter',
     },
     {
@@ -887,7 +888,7 @@ export const shalimarData: Restaurant = {
       name: 'Cheese Garlic Naan',
       price: 140,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/cheese-garlic-naan.jpg',
       description: 'Tandoor-baked naan stuffed with cheese and topped with minced roasted garlic and butter',
     },
     {
@@ -896,7 +897,7 @@ export const shalimarData: Restaurant = {
       name: 'Poori (4 pcs)',
       price: 60,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/poori-4pcs.jpg',
       description: 'Golden puffed deep-fried whole wheat pooris (4 pcs)',
     },
     {
@@ -905,7 +906,7 @@ export const shalimarData: Restaurant = {
       name: 'Vade (4 pcs)',
       price: 80,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/vade-4pcs.jpg',
       description: 'Traditional Konkani multigrain deep-fried puffed Kombdi Vade (4 pcs)',
     },
     {
@@ -914,7 +915,7 @@ export const shalimarData: Restaurant = {
       name: 'Chapati',
       price: 12,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/chapati.jpg',
       description: 'Thin, soft homestyle whole wheat phulka chapati',
     },
     {
@@ -923,7 +924,7 @@ export const shalimarData: Restaurant = {
       name: 'Tandoori Bhakri',
       price: 20,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/tandoori-bhakri.jpg',
       description: 'Rustic flatbread baked to a crisp finish in the tandoor',
     },
     {
@@ -932,7 +933,7 @@ export const shalimarData: Restaurant = {
       name: 'Jowari Bhakri',
       price: 25,
       isVeg: true,
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80',
+      image: '/images/shalimar/jowari-bhakri.jpg',
       description: 'Traditional gluten-free hand-flattened jowar (sorghum) flatbread roasted on tawa',
     },
   ],

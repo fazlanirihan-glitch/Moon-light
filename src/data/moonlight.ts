@@ -16,6 +16,7 @@ export const moonlightData: Restaurant = {
     headerBg: '#0F172A',
     headerText: '#F8FAFC',
   },
+  allowDineIn: true,
   categories: [
     { id: 'beverages', name: 'Beverages' },
     { id: 'snacks', name: 'Snacks' },
@@ -35,7 +36,7 @@ export const moonlightData: Restaurant = {
       price: 50,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/davidoff-coffee.jpg',
       description: 'Rich freshly brewed black aromatic coffee',
     },
     {
@@ -44,7 +45,7 @@ export const moonlightData: Restaurant = {
       price: 80,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/cold-coffee.jpg',
       description: 'Classic chilled creamy blended coffee with froth',
     },
     {
@@ -53,7 +54,7 @@ export const moonlightData: Restaurant = {
       price: 80,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/mint-mojito.jpg',
       description: 'Refreshing sparkling lime and fresh mint mocktail',
     },
     {
@@ -62,7 +63,7 @@ export const moonlightData: Restaurant = {
       price: 110,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chocolate-shake.jpg',
       description: 'Thick creamy chocolate milkshake with chocolate drizzle',
     },
     {
@@ -71,7 +72,7 @@ export const moonlightData: Restaurant = {
       price: 90,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/vanilla-shake.jpg',
       description: 'Smooth and silky classic vanilla milkshake',
     },
     {
@@ -80,7 +81,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/oreo-shake.jpg',
       description: 'Loaded cookies and cream shake topped with crunchy Oreo bits',
     },
     {
@@ -89,7 +90,7 @@ export const moonlightData: Restaurant = {
       price: 80,
       isVeg: true,
       categoryId: 'beverages',
-      image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/lemon-ice-tea.jpg',
       description: 'Chilled iced black tea with fresh citrus lemon and mint',
     },
 
@@ -100,7 +101,7 @@ export const moonlightData: Restaurant = {
       price: 100,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/french-fries.jpg',
       description: 'Golden crispy salted potato fries',
     },
     {
@@ -109,7 +110,7 @@ export const moonlightData: Restaurant = {
       price: 110,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/peri-peri-fries.jpg',
       description: 'Crispy fries dusted with fiery tangy peri-peri spice',
     },
     {
@@ -118,7 +119,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/cheese-fries.jpg',
       description: 'Hot crisp fries drenched in molten golden cheese',
     },
     {
@@ -127,7 +128,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/cheese-garlic-bread.jpg',
       description: 'Toasted baguette baked with garlic butter and melted mozzarella',
     },
     {
@@ -136,7 +137,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: false,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-cheese-garlic-bread.jpg',
       description: 'Garlic bread topped with seasoned shredded chicken and melted cheese',
     },
     {
@@ -145,7 +146,7 @@ export const moonlightData: Restaurant = {
       price: 249,
       isVeg: false,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-loaded-fries-bowl.jpg',
       description: 'Jumbo bowl of fries loaded with chicken chunks, cheese, and sauces',
     },
     {
@@ -154,7 +155,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/corn-cheese-balls.jpg',
       description: 'Golden fried crispy balls filled with sweet corn and molten cheese',
     },
     {
@@ -163,7 +164,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: true,
       categoryId: 'snacks',
-      image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/veg-fingers.jpg',
       description: 'Crunchy crumbed vegetable fingers served with creamy dip',
     },
 
@@ -174,7 +175,7 @@ export const moonlightData: Restaurant = {
       price: 80,
       isVeg: true,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/plain-maggi.jpg',
       description: 'Classic comforting hot 2-minute Maggi noodles',
     },
     {
@@ -183,7 +184,7 @@ export const moonlightData: Restaurant = {
       price: 99,
       isVeg: true,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/masala-veg-maggi.jpg',
       description: 'Maggi tossed with fresh green peas, onions, tomatoes and spices',
     },
     {
@@ -192,7 +193,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: false,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/masala-chicken-maggi.jpg',
       description: 'Spiced Maggi noodles packed with juicy tender chicken bites',
     },
     {
@@ -201,7 +202,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: false,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/egg-masala-maggi.jpg',
       description: 'Maggi scrambled with egg, green chilies, and aromatic herbs',
     },
     {
@@ -210,7 +211,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: true,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/veg-korean-maggi.jpg',
       description: 'Spicy Korean style noodles with sesame oil, chili and vegetables',
     },
     {
@@ -219,7 +220,7 @@ export const moonlightData: Restaurant = {
       price: 160,
       isVeg: false,
       categoryId: 'maggie',
-      image: 'https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-korean-maggi.jpg',
       description: 'Fiery Korean ramen noodles topped with sliced chicken and scallions',
     },
 
@@ -230,7 +231,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/bombay-masala-toast.jpg',
       description: 'Spiced potato stuffing, beetroot, cucumber, mint chutney toasted crisp',
     },
     {
@@ -239,7 +240,7 @@ export const moonlightData: Restaurant = {
       price: 90,
       isVeg: true,
       categoryId: 'veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/veg-cheese-grill.jpg',
       description: 'Grilled sandwich with molten cheese and crunchy garden vegetables',
     },
     {
@@ -248,7 +249,7 @@ export const moonlightData: Restaurant = {
       price: 130,
       isVeg: true,
       categoryId: 'veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1567234669003-dce7a7a88821?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/veg-club-sandwich.jpg',
       description: 'Triple-layer stacked club sandwich with fresh veggies and cheese',
     },
     {
@@ -257,7 +258,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: true,
       categoryId: 'veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/paneer-tikka-sandwich.jpg',
       description: 'Filled with smoky grilled tandoori paneer tikka cubes and capsicum',
     },
     {
@@ -266,7 +267,7 @@ export const moonlightData: Restaurant = {
       price: 90,
       isVeg: true,
       categoryId: 'veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/cheese-corn-sandwich.jpg',
       description: 'Sweet corn kernels blended with overflowing melted cheese',
     },
 
@@ -277,7 +278,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: false,
       categoryId: 'non-veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-cheese-grill.jpg',
       description: 'Tender chicken and melted cheese grilled to perfection',
     },
     {
@@ -286,7 +287,7 @@ export const moonlightData: Restaurant = {
       price: 150,
       isVeg: false,
       categoryId: 'non-veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-club-sandwich.jpg',
       description: 'Hearty double-decker sandwich with roasted chicken, lettuce and mayo',
     },
     {
@@ -295,7 +296,7 @@ export const moonlightData: Restaurant = {
       price: 130,
       isVeg: false,
       categoryId: 'non-veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1553909489-cd47e0907980?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/mayo-chicken-sandwich.jpg',
       description: 'Shredded chicken tossed in creamy seasoned mayonnaise spread',
     },
     {
@@ -304,7 +305,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: false,
       categoryId: 'non-veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/classic-egg-sandwich.jpg',
       description: 'Boiled egg slices with black pepper, fresh lettuce, and butter',
     },
     {
@@ -313,7 +314,7 @@ export const moonlightData: Restaurant = {
       price: 160,
       isVeg: false,
       categoryId: 'non-veg-sandwich',
-      image: 'https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/tandoori-chicken-sandwich.jpg',
       description: 'Spicy tandoori chicken tikka chunks with mint chutney in toasted bread',
     },
 
@@ -324,7 +325,7 @@ export const moonlightData: Restaurant = {
       price: 120,
       isVeg: true,
       categoryId: 'burgers',
-      image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/classic-veg-cheese-burger.jpg',
       description: 'Crispy veggie patty with cheddar slice, tomato and lettuce',
     },
     {
@@ -333,7 +334,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: true,
       categoryId: 'burgers',
-      image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/spicy-paneer-burger.jpg',
       description: 'Crisp seasoned paneer patty with spicy peri-peri sauce and onions',
     },
     {
@@ -342,7 +343,7 @@ export const moonlightData: Restaurant = {
       price: 140,
       isVeg: false,
       categoryId: 'burgers',
-      image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/fried-chicken-burger.jpg',
       description: 'Crunchy golden fried chicken fillet with creamy mayonnaise',
     },
     {
@@ -351,7 +352,7 @@ export const moonlightData: Restaurant = {
       price: 160,
       isVeg: false,
       categoryId: 'burgers',
-      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/grilled-chicken-burger.jpg',
       description: 'Herb-grilled juicy chicken patty with caramelized onions and lettuce',
     },
     {
@@ -360,7 +361,7 @@ export const moonlightData: Restaurant = {
       price: 190,
       isVeg: false,
       categoryId: 'burgers',
-      image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/double-patty-chicken-burger.jpg',
       description: 'Two juicy chicken patties stacked with double cheese layers',
     },
 
@@ -371,7 +372,7 @@ export const moonlightData: Restaurant = {
       price: 130,
       isVeg: true,
       categoryId: 'pasta',
-      image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/masala-veg-pasta.jpg',
       description: 'Penne pasta tossed in a tangy Indian spiced tomato masala with vegetables',
     },
     {
@@ -380,7 +381,7 @@ export const moonlightData: Restaurant = {
       price: 130,
       isVeg: false,
       categoryId: 'pasta',
-      image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/masala-chicken-pasta.jpg',
       description: 'Penne tossed with chicken pieces in a rich flavorful masala gravy',
     },
     {
@@ -389,7 +390,7 @@ export const moonlightData: Restaurant = {
       price: 130,
       isVeg: true,
       categoryId: 'pasta',
-      image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/veg-alfredo-pasta.jpg',
       description: 'Silky rich white cheese cream sauce pasta with garlic and broccoli',
     },
     {
@@ -398,7 +399,7 @@ export const moonlightData: Restaurant = {
       price: 150,
       isVeg: false,
       categoryId: 'pasta',
-      image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-alfredo-pasta.jpg',
       description: 'Creamy Alfredo pasta topped with sliced herb-grilled chicken breast',
     },
 
@@ -409,7 +410,7 @@ export const moonlightData: Restaurant = {
       price: 180,
       isVeg: true,
       categoryId: 'pizza-veg',
-      image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/plain-cheese-pizza.jpg',
       description: 'Classic Margherita with tomato sauce and melted mozzarella cheese',
     },
     {
@@ -418,7 +419,7 @@ export const moonlightData: Restaurant = {
       price: 220,
       isVeg: true,
       categoryId: 'pizza-veg',
-      image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/cheese-and-corn-pizza.jpg',
       description: 'Sweet juicy corn kernels over bubbling mozzarella cheese',
     },
     {
@@ -427,7 +428,7 @@ export const moonlightData: Restaurant = {
       price: 250,
       isVeg: true,
       categoryId: 'pizza-veg',
-      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/farm-fresh-pizza.jpg',
       description: 'Loaded with capsicum, onion, tomato, olives, and mushrooms',
     },
     {
@@ -436,7 +437,7 @@ export const moonlightData: Restaurant = {
       price: 270,
       isVeg: true,
       categoryId: 'pizza-veg',
-      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/peppy-paneer-pizza.jpg',
       description: 'Spiced paneer tikka cubes, crisp capsicum and spicy paprika',
     },
     {
@@ -445,7 +446,7 @@ export const moonlightData: Restaurant = {
       price: 280,
       isVeg: true,
       categoryId: 'pizza-veg',
-      image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/four-flavour-veg-pizza.jpg',
       description: 'Four distinct quadrants of delicious vegetarian toppings in one pizza',
     },
 
@@ -456,7 +457,7 @@ export const moonlightData: Restaurant = {
       price: 210,
       isVeg: false,
       categoryId: 'pizza-chicken',
-      image: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/mexican-chicken-pizza.jpg',
       description: 'Fiery Mexican spiced chicken, jalapeños, onions, and red paprika',
     },
     {
@@ -465,7 +466,7 @@ export const moonlightData: Restaurant = {
       price: 240,
       isVeg: false,
       categoryId: 'pizza-chicken',
-      image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/bbq-chicken-pizza.jpg',
       description: 'Smoky BBQ chicken chunks, red onions, and sweet smoky glaze',
     },
     {
@@ -474,7 +475,7 @@ export const moonlightData: Restaurant = {
       price: 270,
       isVeg: false,
       categoryId: 'pizza-chicken',
-      image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-tikka-pizza.jpg',
       description: 'Desi tandoori spiced chicken tikka pieces with capsicum and mozzarella',
     },
     {
@@ -483,7 +484,7 @@ export const moonlightData: Restaurant = {
       price: 230,
       isVeg: false,
       categoryId: 'pizza-chicken',
-      image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/chicken-mushroom-pizza.jpg',
       description: 'Savory button mushrooms paired with seasoned chicken chunks',
     },
     {
@@ -492,7 +493,7 @@ export const moonlightData: Restaurant = {
       price: 300,
       isVeg: false,
       categoryId: 'pizza-chicken',
-      image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&auto=format&fit=crop&q=80',
+      image: '/images/moonlight/four-flavour-chicken-pizza.jpg',
       description: 'Four chicken styles: Tikka, BBQ, Mexican, and Herb grilled in 4 quadrants',
     },
   ],

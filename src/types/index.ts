@@ -43,6 +43,7 @@ export interface Restaurant {
   categories: Category[];
   menuItems: MenuItem[];
   isComingSoon?: boolean;
+  allowDineIn?: boolean;
 }
 
 export interface CartItem {

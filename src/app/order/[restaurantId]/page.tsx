@@ -195,6 +195,7 @@ function RestaurantMenuContent({ restaurant }: { restaurant: Restaurant }) {
         onClose={() => setIsCheckoutOpen(false)}
         restaurantName={restaurant.name}
         whatsappNumber={restaurant.whatsappNumber}
+        allowDineIn={restaurant.allowDineIn !== false && restaurant.id !== 'shalimar'}
       />
 
       {/* Cross-Restaurant Conflict Dialog */}
