@@ -14,6 +14,7 @@ export interface MenuItem {
   categoryId: string;
   hasVariants?: boolean;
   variants?: MenuVariant[];
+  available?: boolean;
 }
 
 export interface Category {

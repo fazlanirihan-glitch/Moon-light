@@ -1,10 +1,12 @@
-// Central configuration for restaurant WhatsApp numbers and metadata
-// To add a new restaurant, add an entry here and create the corresponding data file
+// Central configuration for restaurant WhatsApp order routing
+// The owner has confirmed that ALL THREE RESTAURANTS use the SAME WhatsApp number for receiving orders.
+
+export const ORDER_WHATSAPP_NUMBER = "917875747996";
 
 export const RESTAURANT_WHATSAPP_NUMBERS: Record<string, string> = {
-  'moonlight': '+910000000000', // TODO: Replace with actual Moonlight Cafe WhatsApp number
-  'fakta-biriyani': '+917737157377',
-  'shalimar': '+910000000000', // TODO: Replace with actual Shalimar WhatsApp number
+  'moonlight': ORDER_WHATSAPP_NUMBER,
+  'fakta-biriyani': ORDER_WHATSAPP_NUMBER,
+  'shalimar': ORDER_WHATSAPP_NUMBER,
 };
 
 export const DEFAULT_LOCATION = 'Chiplun';

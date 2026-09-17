@@ -1,424 +1,499 @@
 import { Restaurant } from '@/types';
+import { ORDER_WHATSAPP_NUMBER } from '@/config/restaurants';
 
 export const moonlightData: Restaurant = {
   id: 'moonlight',
   slug: 'moonlight',
   name: 'Moonlight Cafe & Restaurant',
-  tagline: 'Explore Menu & Order Online',
-  description: 'Your favorite cafe in Chiplun',
+  tagline: 'View Menu & Order',
+  description: 'Your favorite cozy cafe in Chiplun',
   emoji: '🌙',
-  whatsappNumber: '+910000000000',
+  whatsappNumber: ORDER_WHATSAPP_NUMBER,
   theme: {
     primary: '#0F172A',
     secondary: '#F8FAFC',
     accent: '#D4A853',
     headerBg: '#0F172A',
-    headerText: '#F8FAFC'
+    headerText: '#F8FAFC',
   },
   categories: [
+    { id: 'beverages', name: 'Beverages' },
+    { id: 'snacks', name: 'Snacks' },
+    { id: 'maggie', name: 'Maggie' },
+    { id: 'veg-sandwich', name: 'Veg Sandwich' },
+    { id: 'non-veg-sandwich', name: 'Non-Veg Sandwich' },
+    { id: 'burgers', name: 'Burgers' },
+    { id: 'pasta', name: 'Pasta' },
+    { id: 'pizza-veg', name: 'Pizza (Veg)' },
+    { id: 'pizza-chicken', name: 'Pizza (Chicken)' },
+  ],
+  menuItems: [
+    // ===== BEVERAGES =====
     {
-      id: 'beverages',
-      name: 'Beverages',
-      items: [
-        {
-          id: 'ml-bev-1',
-          name: 'Davidoff Coffee',
-          price: 50,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-2',
-          name: 'Cold Coffee',
-          price: 80,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-3',
-          name: 'Mint Mojito',
-          price: 80,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-4',
-          name: 'Chocolate Shake',
-          price: 110,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-5',
-          name: 'Vanilla Shake',
-          price: 90,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-6',
-          name: 'Oreo Shake',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-bev-7',
-          name: 'Lemon Ice-Tea',
-          price: 80,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-1',
+      name: 'Davidoff Coffee',
+      price: 50,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=80',
+      description: 'Rich freshly brewed black aromatic coffee',
     },
     {
-      id: 'snacks',
-      name: 'Snacks',
-      items: [
-        {
-          id: 'ml-snk-1',
-          name: 'French Fries',
-          price: 100,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-2',
-          name: 'Peri-Peri Fries',
-          price: 110,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-3',
-          name: 'Cheese Fries',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-4',
-          name: 'Cheese Garlic Bread',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-5',
-          name: 'Chicken Cheese Garlic Bread',
-          price: 140,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-6',
-          name: 'Chicken Loaded Fries Bowl',
-          price: 249,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-7',
-          name: 'Corn Cheese Balls (6pcs)',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-snk-8',
-          name: 'Veg Fingers (6pcs)',
-          price: 140,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-2',
+      name: 'Cold Coffee',
+      price: 80,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500&auto=format&fit=crop&q=80',
+      description: 'Classic chilled creamy blended coffee with froth',
     },
     {
-      id: 'maggie',
-      name: 'Maggie',
-      items: [
-        {
-          id: 'ml-mag-1',
-          name: 'Plain Maggi',
-          price: 80,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-mag-2',
-          name: 'Masala Veg Maggi',
-          price: 99,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-mag-3',
-          name: 'Masala Chicken Maggi',
-          price: 140,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-mag-4',
-          name: 'Egg Masala Maggi',
-          price: 120,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-mag-5',
-          name: 'Veg Korean Maggi',
-          price: 140,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-mag-6',
-          name: 'Chicken Korean Maggi',
-          price: 160,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-3',
+      name: 'Mint Mojito',
+      price: 80,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=500&auto=format&fit=crop&q=80',
+      description: 'Refreshing sparkling lime and fresh mint mocktail',
     },
     {
-      id: 'veg-sandwich',
-      name: 'Veg Sandwich',
-      items: [
-        {
-          id: 'ml-vs-1',
-          name: 'Bombay Masala Toast',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-vs-2',
-          name: 'Veg Cheese Grill',
-          price: 90,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-vs-3',
-          name: 'Veg Club Sandwich',
-          price: 130,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-vs-4',
-          name: 'Paneer Tikka Sandwich',
-          price: 140,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-vs-5',
-          name: 'Cheese Corn Sandwich',
-          price: 90,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-4',
+      name: 'Chocolate Shake',
+      price: 110,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=80',
+      description: 'Thick creamy chocolate milkshake with chocolate drizzle',
     },
     {
-      id: 'non-veg-sandwich',
-      name: 'Non-Veg Sandwich',
-      items: [
-        {
-          id: 'ml-nvs-1',
-          name: 'Chicken Cheese Grill',
-          price: 120,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-nvs-2',
-          name: 'Chicken Club Sandwich',
-          price: 150,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-nvs-3',
-          name: 'Mayo Chicken Sandwich',
-          price: 130,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-nvs-4',
-          name: 'Classic Egg Sandwich',
-          price: 120,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-nvs-5',
-          name: 'Tandoori Chicken Sandwich',
-          price: 160,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-5',
+      name: 'Vanilla Shake',
+      price: 90,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=500&auto=format&fit=crop&q=80',
+      description: 'Smooth and silky classic vanilla milkshake',
     },
     {
-      id: 'burgers',
-      name: 'Burgers',
-      items: [
-        {
-          id: 'ml-brg-1',
-          name: 'Classic Veg Cheese Burger',
-          price: 120,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-brg-2',
-          name: 'Spicy Paneer Burger',
-          price: 140,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-brg-3',
-          name: 'Fried Chicken Burger',
-          price: 140,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-brg-4',
-          name: 'Grilled Chicken Burger',
-          price: 160,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-brg-5',
-          name: 'Double Patty Chicken Burger',
-          price: 190,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-6',
+      name: 'Oreo Shake',
+      price: 120,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500&auto=format&fit=crop&q=80',
+      description: 'Loaded cookies and cream shake topped with crunchy Oreo bits',
     },
     {
-      id: 'pasta',
-      name: 'Pasta',
-      items: [
-        {
-          id: 'ml-pst-1',
-          name: 'Masala Veg Pasta',
-          price: 130,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pst-2',
-          name: 'Masala Chicken Pasta',
-          price: 130,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pst-3',
-          name: 'Veg Alfredo Pasta',
-          price: 130,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pst-4',
-          name: 'Chicken Alfredo Pasta',
-          price: 150,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-bev-7',
+      name: 'Lemon Ice-Tea',
+      price: 80,
+      isVeg: true,
+      categoryId: 'beverages',
+      image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&auto=format&fit=crop&q=80',
+      description: 'Chilled iced black tea with fresh citrus lemon and mint',
+    },
+
+    // ===== SNACKS =====
+    {
+      id: 'ml-snk-1',
+      name: 'French Fries',
+      price: 100,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop&q=80',
+      description: 'Golden crispy salted potato fries',
     },
     {
-      id: 'pizza-veg',
-      name: 'Pizza (Veg)',
-      items: [
-        {
-          id: 'ml-pv-1',
-          name: 'Plain Cheese Pizza',
-          price: 180,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pv-2',
-          name: 'Cheese and Corn',
-          price: 220,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pv-3',
-          name: 'Farm Fresh Pizza',
-          price: 250,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pv-4',
-          name: 'Peppy Paneer Pizza',
-          price: 270,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pv-5',
-          name: 'Four Flavour Pizza (Veg)',
-          price: 280,
-          isVeg: true,
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop'
-        }
-      ]
+      id: 'ml-snk-2',
+      name: 'Peri-Peri Fries',
+      price: 110,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=500&auto=format&fit=crop&q=80',
+      description: 'Crispy fries dusted with fiery tangy peri-peri spice',
     },
     {
-      id: 'pizza-chicken',
-      name: 'Pizza (Chicken)',
-      items: [
-        {
-          id: 'ml-pc-1',
-          name: 'Mexican Chicken Pizza',
-          price: 210,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pc-2',
-          name: 'BBQ Chicken Pizza',
-          price: 240,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pc-3',
-          name: 'Chicken Tikka Pizza',
-          price: 270,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pc-4',
-          name: 'Chicken Mushroom Pizza',
-          price: 230,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'
-        },
-        {
-          id: 'ml-pc-5',
-          name: 'Four Flavour Pizza (Chicken)',
-          price: 300,
-          isVeg: false,
-          image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'
-        }
-      ]
-    }
-  ]
+      id: 'ml-snk-3',
+      name: 'Cheese Fries',
+      price: 120,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=500&auto=format&fit=crop&q=80',
+      description: 'Hot crisp fries drenched in molten golden cheese',
+    },
+    {
+      id: 'ml-snk-4',
+      name: 'Cheese Garlic Bread',
+      price: 120,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=500&auto=format&fit=crop&q=80',
+      description: 'Toasted baguette baked with garlic butter and melted mozzarella',
+    },
+    {
+      id: 'ml-snk-5',
+      name: 'Chicken Cheese Garlic Bread',
+      price: 140,
+      isVeg: false,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&auto=format&fit=crop&q=80',
+      description: 'Garlic bread topped with seasoned shredded chicken and melted cheese',
+    },
+    {
+      id: 'ml-snk-6',
+      name: 'Chicken Loaded Fries Bowl',
+      price: 249,
+      isVeg: false,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=80',
+      description: 'Jumbo bowl of fries loaded with chicken chunks, cheese, and sauces',
+    },
+    {
+      id: 'ml-snk-7',
+      name: 'Corn Cheese Balls (6pcs)',
+      price: 120,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?w=500&auto=format&fit=crop&q=80',
+      description: 'Golden fried crispy balls filled with sweet corn and molten cheese',
+    },
+    {
+      id: 'ml-snk-8',
+      name: 'Veg Fingers (6pcs)',
+      price: 140,
+      isVeg: true,
+      categoryId: 'snacks',
+      image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=80',
+      description: 'Crunchy crumbed vegetable fingers served with creamy dip',
+    },
+
+    // ===== MAGGIE =====
+    {
+      id: 'ml-mag-1',
+      name: 'Plain Maggi',
+      price: 80,
+      isVeg: true,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&auto=format&fit=crop&q=80',
+      description: 'Classic comforting hot 2-minute Maggi noodles',
+    },
+    {
+      id: 'ml-mag-2',
+      name: 'Masala Veg Maggi',
+      price: 99,
+      isVeg: true,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&auto=format&fit=crop&q=80',
+      description: 'Maggi tossed with fresh green peas, onions, tomatoes and spices',
+    },
+    {
+      id: 'ml-mag-3',
+      name: 'Masala Chicken Maggi',
+      price: 140,
+      isVeg: false,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=500&auto=format&fit=crop&q=80',
+      description: 'Spiced Maggi noodles packed with juicy tender chicken bites',
+    },
+    {
+      id: 'ml-mag-4',
+      name: 'Egg Masala Maggi',
+      price: 120,
+      isVeg: false,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?w=500&auto=format&fit=crop&q=80',
+      description: 'Maggi scrambled with egg, green chilies, and aromatic herbs',
+    },
+    {
+      id: 'ml-mag-5',
+      name: 'Veg Korean Maggi',
+      price: 140,
+      isVeg: true,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=500&auto=format&fit=crop&q=80',
+      description: 'Spicy Korean style noodles with sesame oil, chili and vegetables',
+    },
+    {
+      id: 'ml-mag-6',
+      name: 'Chicken Korean Maggi',
+      price: 160,
+      isVeg: false,
+      categoryId: 'maggie',
+      image: 'https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=500&auto=format&fit=crop&q=80',
+      description: 'Fiery Korean ramen noodles topped with sliced chicken and scallions',
+    },
+
+    // ===== VEG SANDWICH =====
+    {
+      id: 'ml-vsw-1',
+      name: 'Bombay Masala Toast',
+      price: 120,
+      isVeg: true,
+      categoryId: 'veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&auto=format&fit=crop&q=80',
+      description: 'Spiced potato stuffing, beetroot, cucumber, mint chutney toasted crisp',
+    },
+    {
+      id: 'ml-vsw-2',
+      name: 'Veg Cheese Grill',
+      price: 90,
+      isVeg: true,
+      categoryId: 'veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=500&auto=format&fit=crop&q=80',
+      description: 'Grilled sandwich with molten cheese and crunchy garden vegetables',
+    },
+    {
+      id: 'ml-vsw-3',
+      name: 'Veg Club Sandwich',
+      price: 130,
+      isVeg: true,
+      categoryId: 'veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1567234669003-dce7a7a88821?w=500&auto=format&fit=crop&q=80',
+      description: 'Triple-layer stacked club sandwich with fresh veggies and cheese',
+    },
+    {
+      id: 'ml-vsw-4',
+      name: 'Paneer Tikka Sandwich',
+      price: 140,
+      isVeg: true,
+      categoryId: 'veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=80',
+      description: 'Filled with smoky grilled tandoori paneer tikka cubes and capsicum',
+    },
+    {
+      id: 'ml-vsw-5',
+      name: 'Cheese Corn Sandwich',
+      price: 90,
+      isVeg: true,
+      categoryId: 'veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?w=500&auto=format&fit=crop&q=80',
+      description: 'Sweet corn kernels blended with overflowing melted cheese',
+    },
+
+    // ===== NON-VEG SANDWICH =====
+    {
+      id: 'ml-nsw-1',
+      name: 'Chicken Cheese Grill',
+      price: 120,
+      isVeg: false,
+      categoryId: 'non-veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=500&auto=format&fit=crop&q=80',
+      description: 'Tender chicken and melted cheese grilled to perfection',
+    },
+    {
+      id: 'ml-nsw-2',
+      name: 'Chicken Club Sandwich',
+      price: 150,
+      isVeg: false,
+      categoryId: 'non-veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&auto=format&fit=crop&q=80',
+      description: 'Hearty double-decker sandwich with roasted chicken, lettuce and mayo',
+    },
+    {
+      id: 'ml-nsw-3',
+      name: 'Mayo Chicken Sandwich',
+      price: 130,
+      isVeg: false,
+      categoryId: 'non-veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1553909489-cd47e0907980?w=500&auto=format&fit=crop&q=80',
+      description: 'Shredded chicken tossed in creamy seasoned mayonnaise spread',
+    },
+    {
+      id: 'ml-nsw-4',
+      name: 'Classic Egg Sandwich',
+      price: 120,
+      isVeg: false,
+      categoryId: 'non-veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?w=500&auto=format&fit=crop&q=80',
+      description: 'Boiled egg slices with black pepper, fresh lettuce, and butter',
+    },
+    {
+      id: 'ml-nsw-5',
+      name: 'Tandoori Chicken Sandwich',
+      price: 160,
+      isVeg: false,
+      categoryId: 'non-veg-sandwich',
+      image: 'https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=500&auto=format&fit=crop&q=80',
+      description: 'Spicy tandoori chicken tikka chunks with mint chutney in toasted bread',
+    },
+
+    // ===== BURGERS =====
+    {
+      id: 'ml-brg-1',
+      name: 'Classic Veg Cheese Burger',
+      price: 120,
+      isVeg: true,
+      categoryId: 'burgers',
+      image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=80',
+      description: 'Crispy veggie patty with cheddar slice, tomato and lettuce',
+    },
+    {
+      id: 'ml-brg-2',
+      name: 'Spicy Paneer Burger',
+      price: 140,
+      isVeg: true,
+      categoryId: 'burgers',
+      image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500&auto=format&fit=crop&q=80',
+      description: 'Crisp seasoned paneer patty with spicy peri-peri sauce and onions',
+    },
+    {
+      id: 'ml-brg-3',
+      name: 'Fried Chicken Burger',
+      price: 140,
+      isVeg: false,
+      categoryId: 'burgers',
+      image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?w=500&auto=format&fit=crop&q=80',
+      description: 'Crunchy golden fried chicken fillet with creamy mayonnaise',
+    },
+    {
+      id: 'ml-brg-4',
+      name: 'Grilled Chicken Burger',
+      price: 160,
+      isVeg: false,
+      categoryId: 'burgers',
+      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80',
+      description: 'Herb-grilled juicy chicken patty with caramelized onions and lettuce',
+    },
+    {
+      id: 'ml-brg-5',
+      name: 'Double Patty Chicken Burger',
+      price: 190,
+      isVeg: false,
+      categoryId: 'burgers',
+      image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=80',
+      description: 'Two juicy chicken patties stacked with double cheese layers',
+    },
+
+    // ===== PASTA =====
+    {
+      id: 'ml-pst-1',
+      name: 'Masala Veg Pasta',
+      price: 130,
+      isVeg: true,
+      categoryId: 'pasta',
+      image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&auto=format&fit=crop&q=80',
+      description: 'Penne pasta tossed in a tangy Indian spiced tomato masala with vegetables',
+    },
+    {
+      id: 'ml-pst-2',
+      name: 'Masala Chicken Pasta',
+      price: 130,
+      isVeg: false,
+      categoryId: 'pasta',
+      image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=500&auto=format&fit=crop&q=80',
+      description: 'Penne tossed with chicken pieces in a rich flavorful masala gravy',
+    },
+    {
+      id: 'ml-pst-3',
+      name: 'Veg Alfredo Pasta',
+      price: 130,
+      isVeg: true,
+      categoryId: 'pasta',
+      image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop&q=80',
+      description: 'Silky rich white cheese cream sauce pasta with garlic and broccoli',
+    },
+    {
+      id: 'ml-pst-4',
+      name: 'Chicken Alfredo Pasta',
+      price: 150,
+      isVeg: false,
+      categoryId: 'pasta',
+      image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&auto=format&fit=crop&q=80',
+      description: 'Creamy Alfredo pasta topped with sliced herb-grilled chicken breast',
+    },
+
+    // ===== PIZZA (VEG) =====
+    {
+      id: 'ml-pvg-1',
+      name: 'Plain Cheese Pizza',
+      price: 180,
+      isVeg: true,
+      categoryId: 'pizza-veg',
+      image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&auto=format&fit=crop&q=80',
+      description: 'Classic Margherita with tomato sauce and melted mozzarella cheese',
+    },
+    {
+      id: 'ml-pvg-2',
+      name: 'Cheese and Corn',
+      price: 220,
+      isVeg: true,
+      categoryId: 'pizza-veg',
+      image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80',
+      description: 'Sweet juicy corn kernels over bubbling mozzarella cheese',
+    },
+    {
+      id: 'ml-pvg-3',
+      name: 'Farm Fresh Pizza',
+      price: 250,
+      isVeg: true,
+      categoryId: 'pizza-veg',
+      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=500&auto=format&fit=crop&q=80',
+      description: 'Loaded with capsicum, onion, tomato, olives, and mushrooms',
+    },
+    {
+      id: 'ml-pvg-4',
+      name: 'Peppy Paneer Pizza',
+      price: 270,
+      isVeg: true,
+      categoryId: 'pizza-veg',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&fit=crop&q=80',
+      description: 'Spiced paneer tikka cubes, crisp capsicum and spicy paprika',
+    },
+    {
+      id: 'ml-pvg-5',
+      name: 'Four Flavour Pizza (Veg)',
+      price: 280,
+      isVeg: true,
+      categoryId: 'pizza-veg',
+      image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?w=500&auto=format&fit=crop&q=80',
+      description: 'Four distinct quadrants of delicious vegetarian toppings in one pizza',
+    },
+
+    // ===== PIZZA (CHICKEN) =====
+    {
+      id: 'ml-pch-1',
+      name: 'Mexican Chicken Pizza',
+      price: 210,
+      isVeg: false,
+      categoryId: 'pizza-chicken',
+      image: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&auto=format&fit=crop&q=80',
+      description: 'Fiery Mexican spiced chicken, jalapeños, onions, and red paprika',
+    },
+    {
+      id: 'ml-pch-2',
+      name: 'BBQ Chicken Pizza',
+      price: 240,
+      isVeg: false,
+      categoryId: 'pizza-chicken',
+      image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&auto=format&fit=crop&q=80',
+      description: 'Smoky BBQ chicken chunks, red onions, and sweet smoky glaze',
+    },
+    {
+      id: 'ml-pch-3',
+      name: 'Chicken Tikka Pizza',
+      price: 270,
+      isVeg: false,
+      categoryId: 'pizza-chicken',
+      image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80',
+      description: 'Desi tandoori spiced chicken tikka pieces with capsicum and mozzarella',
+    },
+    {
+      id: 'ml-pch-4',
+      name: 'Chicken Mushroom Pizza',
+      price: 230,
+      isVeg: false,
+      categoryId: 'pizza-chicken',
+      image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=500&auto=format&fit=crop&q=80',
+      description: 'Savory button mushrooms paired with seasoned chicken chunks',
+    },
+    {
+      id: 'ml-pch-5',
+      name: 'Four Flavour Pizza (Chicken)',
+      price: 300,
+      isVeg: false,
+      categoryId: 'pizza-chicken',
+      image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&auto=format&fit=crop&q=80',
+      description: 'Four chicken styles: Tikka, BBQ, Mexican, and Herb grilled in 4 quadrants',
+    },
+  ],
 };
